@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Diane Wang | Software Engineer
+        </title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    </head>
+
+    <body>
+
+        <header>
+            <a href="#" class="logo">DIANE WANG</a>
+            
+            <nav> 
+                <ul>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="cta" href="#"><button>Contact</button></a>
+                    </li>
+                    
+                </ul>
+            </nav>
+    
+        </header>
+
+        <main>
+            <section id="about">
+                <h1>About</h1>
+                <p>I am a student studying a Bachelor of Science (Computing and Software Systems) student at The University of Melbourne eager to gain experience and develop professional and technical skills.</p>
+            </section>
+    
+            <section id="education">
+                <h1>Education</h1>
+    
+                <article class="uni">
+                    <img src="res/unimelb-logo.png">
+                    <div>
+                        <h1>Bachelor of Science</h1>
+                        <p>Major in Computing and Software Systems</p>
+
+                        <p>The University of Melbourne</p>
+                        <p>2022-2025</p>
+                        <p>Subjects</p>
+                        <ul>
+                            <li>Database Systems</li>
+                            <li>Algorithms & Data Structures</li>
+                            <li>Object Oriented Software Development</li>
+                            <li>Computer Systems</li>
+                            <li>Software Modelling & Design</li>
+                        </ul>
+                    </div>
+                    
+                </article>
+    
+             
+    
+            </section>
+            
+    
+            <section id="projects">
+                <h1>Portfolio</h1>
+    
+                <article class="folio" id="lucky13">
+
+                    <video autoplay loop controls>
+                        <source src="res/lucky13-demo.mov" type="video/mp4">
+                    </video>
+
+                    <div class="project-text">
+                        <h1>Lucky13</h1>
+                        <p>Refactor and extend existing code to a more readable and usable form</p>
+                        <p>Using GoF design patterns, specifically strategy, </p>
+                      
+                    </div>
+                        
+                </article>
+    
+                <article class="folio" id="shadowdance">
+
+                    <video autoplay loop>
+                        <source src="res/shadowdance-demo.mov" type="video/mp4">
+                    </video>
+
+                    <div class="project-text">
+                        <h1>ShadowDance</h1>
+                        <p>Created a game for a given specification utilising object oriented principals, deploying Java and GitLab</p>
+                        <p>Implemented using Java and version control practices utilising GitLab to track changes and maintain a systematic and organised development process</p>
+                        <p>Developed a well-structured codebase using OOP principle to allow modularity, maintainability and code reusability for efficient development and to facilitate future updates and enhancements</p> 
+                            
+                    </div>
+                    
+                    
+                </article>
+            </section>
+
+            <section class="skills">
+                <h1>Skills</h1>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+
+
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+          
+          
+            </section>
+
+            <section id="contact">
+
+            </section>
+
+        </main>
+
+        
+
+    </body>
+
+    <script>
+        const videos = document.querySelectorAll('.video');
+
+        videos.forEach(video => {
+            video.addEventListener('mouseenter', () => {
+            video.play();
+            });
+  
+            video.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+        });
+    </script>
+
+
+</html>

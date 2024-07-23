@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilites;
+
+html, body{
+    margin: 0;
+    padding: 0;
+
+
+}
+
+h1 {
+    font-family: "Kanit", sans-serif;
+    margin: 20px;
+}
+
+p, li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+
+
+header {
+
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+    background: #7c98b3;
+    opacity: 70%;
+    z-index: 1;
+
+    width: 100%;
+
+    top: 0;
+
+    font-family: "Kanit", sans-serif;
+
+}
+
+
+
+.logo {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+a:visited {text-decoration: none;color: black;}
+
+a:hover {text-decoration: underline;color: black;}
+
+a:active {text-decoration: none;color: black;}
+
+
+
+
+nav {
+    font-size: 15px;
+}
+
+nav ul {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+}
+nav ul li{
+    list-style: none;
+
+    padding-right: 45px;
+
+}
+
+
+
+main {
+    position: relative;
+    top: 100px;
+}
+
+
+section{
+
+    width: 100%;
+
+    top: 100px;
+}
+
+body {
+    top: 200px;
+    margin-bottom: 200px;
+}
+
+video {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.folio{
+    display: flex;
+    border-style: solid;
+    margin: 20px;
+}
+
+.folio video {
+    margin: 10px;
+
+}
+
+.folio .project-text {
+    margin: 10px;
+}
+
+.uni {
+    display: flex;
+    border-style: solid;
+
+
+}
+.uni img{
+    width: calc(100vw/4);
+    height: calc(100vw/4);
+    max-width: 200px;
+    max-height: 200px;
+    padding: 30px;
+}
+
+.skills img{
+    width: 30px;
+}
+
+#about {
+    margin: 30px;
+}
+
+#education {
+    margin: 30px;
+}
